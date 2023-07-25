@@ -1,0 +1,3 @@
+[submodule "modules/flow-nft"]
+	path = modules/flow-nft
+	url = git@github.com:onflow/flow-nft.git
