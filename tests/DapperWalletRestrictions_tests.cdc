@@ -28,7 +28,22 @@ pub fun testAddExampleNFT() {
     assert(res==1, message: "should return dict with 1 entry")
 }
 
+pub fun testGenericAddRestrictionTx() {
+    let typeIdent = "A.".concat(strip0x(adminAccount.address)).concat(".ExampleNFT.NFT")
+    txExecutor("add_restriction.cdc", [adminAccount], [typeIdent, {"CAN_INIT":true}], nil, nil)
+    let res = scriptExecutor("test/get_all_types_len.cdc", [])! as! Int
+    assert(res==1, message: "should return dict with 1 entry")
+}
+
+pub fun testCheckAgainstResource() {
+    let typeIdent = "A.".concat(strip0x(adminAccount.address)).concat(".ExampleNFT.Collection")
+    txExecutor("add_restriction.cdc", [adminAccount], [typeIdent, {"CAN_INIT":true}], nil, nil)
+
+    txExecutor("test/new_nft_check.cdc", [adminAccount], [], nil, nil)
+}
+
 pub fun testGetConfigFlags() {
+
     let res = scriptExecutor("get_config_flags.cdc", [])! as! {String:String}
     assert(res["CAN_INIT"]! != "")
 }

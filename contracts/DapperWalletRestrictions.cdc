@@ -1,4 +1,5 @@
 pub contract DapperWalletRestrictions {
+//
     pub let StoragePath: StoragePath
 
     pub event TypeChanged(identifier: Type, newConfig: TypeConfig)
@@ -19,6 +20,10 @@ pub contract DapperWalletRestrictions {
         pub let flags: {String: Bool}
 
         pub fun setFlag(_ flag: String, _ value: Bool) {
+            if DapperWalletRestrictions.GetConfigFlags()[flag] == nil {
+                panic("Invalid flag")
+            }
+
             self.flags[flag] = value
         }
 

@@ -9,6 +9,10 @@ import Test
 
 pub let blockchain = Test.newEmulatorBlockchain()
 
+pub fun strip0x(_ a: Address): String {
+    return a.toString().slice(from:2,upTo:18)
+}
+
 pub fun deploy(_ contractName: String, _ account: Test.Account, _ path: String) {
     let err = blockchain.deployContract(
         name: contractName,

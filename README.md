@@ -28,6 +28,12 @@ Follow the steps outlined below to set up your development environment.
 
 ## Deployment
 
+### Deploy contract
 ```bash
-flow deploy -n testnet -f flow.json -f flow-keys.json
+flow deploy -n testnet
+```
+
+### Update contract
+```bash
+flow accounts update-contract contracts/DapperWalletRestrictions.cdc DapperWalletRestrictions --signer dapper-wallet-restrictions-testnet
 ```
