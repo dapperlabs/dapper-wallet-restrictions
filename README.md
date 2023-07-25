@@ -37,3 +37,10 @@ flow deploy -n testnet
 ```bash
 flow accounts update-contract contracts/DapperWalletRestrictions.cdc DapperWalletRestrictions --signer dapper-wallet-restrictions-testnet
 ```
+
+### Add Restriction
+```bash
+flow transactions send transactions/add_restriction.cdc "A.69f6cf3aacf5b1b1.Magic.Collection" '{"CAN_INIT":true}' --signer dapper-wallet-restrictions-testnet -n testnet
+
+flow transactions send transactions/add_restriction.cdc "A.69f6cf3aacf5b1b1.Magic.NFT" '{"CAN_SELL":true, "CAN_TRADE":true, "CAN_TRADE_EXTERNAL":false, "CAN_TRADE_DIFF_NFT":false}' --signer dapper-wallet-restrictions-testnet -n testnet
+```

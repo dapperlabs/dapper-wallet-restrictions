@@ -1,5 +1,4 @@
 import DapperWalletRestrictions from "DapperWalletRestrictions"
-import ExampleNFT from "ExampleNFT"
 
 transaction(typeIdentifier: String, flags: {String:Bool}) {
     prepare(acct: AuthAccount) {
