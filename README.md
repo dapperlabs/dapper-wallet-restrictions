@@ -15,3 +15,10 @@ Follow the steps outlined below to set up your development environment.
    ```bash
    ./test.sh
    ```
+   
+
+## Deployment
+
+```bash
+flow deploy -n testnet -f flow.json -f flow-keys.json
+```

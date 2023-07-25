@@ -18,6 +18,11 @@
 			"emulator-account": [
 				"DapperWalletRestrictions"
 			]
+		},
+		"testnet": {
+			"dapper-wallet-restrictions-testnet": [
+				"DapperWalletRestrictions"
+			]
 		}
 	}
 }
