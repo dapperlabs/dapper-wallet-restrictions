@@ -1,3 +1,12 @@
+## Dapper Wallet Restrictions
+
+This contract contains restrictions dapper imposes on collections that are stored on dapper custodial wallet
+
+| Network | Address            |
+| ------- |--------------------|
+| Mainnet | /                  |
+| Testnet | 0xa7d10afc50b14991 |
+
 ## Development
 
 Follow the steps outlined below to set up your development environment.
