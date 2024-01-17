@@ -15,6 +15,14 @@
 				"location": "dapper-wallet-restrictions-testnet.key"
 			}
 		},
+		"dapper-wallet-restrictions-mainnet": {
+			"address": "2d4cebdb9eca6f49",
+			"key": {
+				"type": "file",
+				"hashAlgorithm": "SHA2_256",
+				"location": "dapper-wallet-restrictions-mainnet.key"
+			}
+		},
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
 			"key": "2e8a599d996182262b49b2dbacf15d4ce103044d74ca003e5959ab3d64608947"
@@ -28,6 +36,11 @@
 		},
 		"testnet": {
 			"dapper-wallet-restrictions-testnet": [
+				"DapperWalletRestrictions"
+			]
+		},
+		"mainnet": {
+			"dapper-wallet-restrictions-mainnet": [
 				"DapperWalletRestrictions"
 			]
 		}

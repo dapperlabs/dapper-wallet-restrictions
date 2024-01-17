@@ -3,8 +3,8 @@
 This contract contains restrictions dapper imposes on collections that are stored on dapper custodial wallet
 
 | Network | Address            |
-| ------- |--------------------|
-| Mainnet | /                  |
+|---------|--------------------|
+| Mainnet | 0x2d4cebdb9eca6f49 |
 | Testnet | 0xa7d10afc50b14991 |
 
 ## Development
@@ -42,5 +42,5 @@ flow accounts update-contract contracts/DapperWalletRestrictions.cdc DapperWalle
 ```bash
 flow transactions send transactions/add_restriction.cdc "A.69f6cf3aacf5b1b1.Magic.Collection" '{"CAN_INIT":true}' --signer dapper-wallet-restrictions-testnet -n testnet
 
-flow transactions send transactions/add_restriction.cdc "A.69f6cf3aacf5b1b1.Magic.NFT" '{"CAN_SELL":true, "CAN_TRADE":true, "CAN_TRADE_EXTERNAL":false, "CAN_TRADE_DIFF_NFT":false}' --signer dapper-wallet-restrictions-testnet -n testnet
+flow transactions send transactions/add_restriction.cdc "A.edf9df96c92f4595.Pinnacle.NFT" '{"CAN_SELL":true, "CAN_TRADE":true, "CAN_TRADE_EXTERNAL":false, "CAN_TRADE_DIFF_NFT":false}' --signer dapper-wallet-restrictions-mainnet -n mainnet
 ```
