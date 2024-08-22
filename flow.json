@@ -1,5 +1,6 @@
 {
 	"contracts": {
+		"DapperWalletCollections": "./contracts/DapperWalletCollections.cdc",
 		"DapperWalletRestrictions": "./contracts/DapperWalletRestrictions.cdc"
 	},
 	"networks": {
@@ -51,7 +52,8 @@
 				"DapperWalletRestrictions"
 			],
 			"dapper-wallet-restrictions-testnet-2": [
-				"DapperWalletRestrictions"
+				"DapperWalletRestrictions",
+				"DapperWalletCollections"
 			]
 		}
 	}
