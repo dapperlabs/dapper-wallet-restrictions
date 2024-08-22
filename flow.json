@@ -17,6 +17,14 @@
 				"location": "dapper-wallet-restrictions-mainnet.key"
 			}
 		},
+		"dapper-collection-allowlist-mainnet": {
+			"address": "42a54b4f70e7dc81",
+			"key": {
+				"type": "file",
+				"hashAlgorithm": "SHA2_256",
+				"location": "dapper-wallet-collections-mainnet.key"
+			}
+		},
 		"dapper-wallet-restrictions-testnet": {
 			"address": "a7d10afc50b14991",
 			"key": {
