@@ -10,6 +10,6 @@ transaction(typeIdentifier: String, flags: {String:Bool}) {
             conf.setFlag(k, flags[k]!)
         }
         let t = CompositeType(typeIdentifier)!
-        ref.addType(t, conf: conf)
+        ref.updateType(t, conf: conf)
     }
 }

@@ -1,5 +1,6 @@
 {
 	"contracts": {
+		"DapperWalletCollections": "./contracts/DapperWalletCollections.cdc",
 		"DapperWalletRestrictions": "./contracts/DapperWalletRestrictions.cdc"
 	},
 	"networks": {
@@ -8,6 +9,23 @@
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
 	"accounts": {
+		"dapper-wallet-restrictions-mainnet": {
+			"address": "2d4cebdb9eca6f49",
+			"key": {
+				"type": "file",
+				"hashAlgorithm": "SHA2_256",
+				"location": "dapper-wallet-restrictions-mainnet.key"
+			}
+		},
+		"dapper-collection-allowlist-mainnet": {
+			"address": "42a54b4f70e7dc81",
+			"key": {
+				"type": "file",
+				"hashAlgorithm": "SHA3_256",
+				"index": 2,
+				"location": "dapper-wallet-collections-mainnet.key"
+			}
+		},
 		"dapper-wallet-restrictions-testnet": {
 			"address": "a7d10afc50b14991",
 			"key": {
@@ -15,12 +33,11 @@
 				"location": "dapper-wallet-restrictions-testnet.key"
 			}
 		},
-		"dapper-wallet-restrictions-mainnet": {
-			"address": "2d4cebdb9eca6f49",
+		"dapper-wallet-restrictions-testnet-2": {
+			"address": "b67c471ade6fdbea",
 			"key": {
 				"type": "file",
-				"hashAlgorithm": "SHA2_256",
-				"location": "dapper-wallet-restrictions-mainnet.key"
+				"location": "dapper-wallet-restrictions-testnet.key"
 			}
 		},
 		"emulator-account": {
@@ -34,14 +51,21 @@
 				"DapperWalletRestrictions"
 			]
 		},
-		"testnet": {
-			"dapper-wallet-restrictions-testnet": [
-				"DapperWalletRestrictions"
-			]
-		},
 		"mainnet": {
 			"dapper-wallet-restrictions-mainnet": [
 				"DapperWalletRestrictions"
+			],
+			"dapper-collection-allowlist-mainnet": [
+				"DapperWalletCollections"
+			]
+		},
+		"testnet": {
+			"dapper-wallet-restrictions-testnet": [
+				"DapperWalletRestrictions"
+			],
+			"dapper-wallet-restrictions-testnet-2": [
+				"DapperWalletRestrictions",
+				"DapperWalletCollections"
 			]
 		}
 	}
