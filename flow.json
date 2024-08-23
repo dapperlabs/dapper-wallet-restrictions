@@ -21,7 +21,8 @@
 			"address": "42a54b4f70e7dc81",
 			"key": {
 				"type": "file",
-				"hashAlgorithm": "SHA2_256",
+				"hashAlgorithm": "SHA3_256",
+				"index": 2,
 				"location": "dapper-wallet-collections-mainnet.key"
 			}
 		},
@@ -53,6 +54,9 @@
 		"mainnet": {
 			"dapper-wallet-restrictions-mainnet": [
 				"DapperWalletRestrictions"
+			],
+			"dapper-collection-allowlist-mainnet": [
+				"DapperWalletCollections"
 			]
 		},
 		"testnet": {
